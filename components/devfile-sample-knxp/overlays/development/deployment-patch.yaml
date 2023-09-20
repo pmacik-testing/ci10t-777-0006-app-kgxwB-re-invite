@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-knxp
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0006-tenant/ci10t-777-0006-app/devfile-sample-knxp@sha256:20366cc814b45ed3698b5fe5e4940387805c0dabc23abf6411e11e94a5740168
+        name: my-nodejs
+        resources: {}
+status: {}
